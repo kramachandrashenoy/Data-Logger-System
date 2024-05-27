@@ -1,7 +1,5 @@
 import serial
 import csv
-# import os
-
 arduino_port = "COM3"  
 baud = 9600  
 fileName = "analog-data.csv"  
@@ -16,11 +14,7 @@ except serial.SerialException as e:
 
 
 sensor_data = []
-
-
 samples = 10
-
-
 line = 0  
 while line < samples:
     getData = ser.readline()  
